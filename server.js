@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const PORT = 5000;
+const cors = require('cors');
+
+app.use(cors()); //adding cors middleware to connect backend with frontend
 
 // Middleware to parse JSON data
 app.use(express.json());
